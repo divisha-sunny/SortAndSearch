@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.search.BinarySearch;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -31,8 +33,17 @@ public class Main {
 
         quickSort q = new quickSort();
         q.sort(arr, 0, n-1);
-        System.out.println("Sorted Array:");
-        q.printArray(arr);
+        /*System.out.println("Sorted Array:");
+        q.printArray(arr);*/
+        int x = 9;
+        BinarySearch b = new BinarySearch();
+        int result = b.binarySearch(arr, 0, n-1, x);
+        if(result == -1){
+            System.out.println("Element not found");
+        }
+        else{
+            System.out.println("Element found at index:" + result);
+        }
 
     }
 }
