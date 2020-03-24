@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.search.BinarySearch;
+import com.company.search.kthSmallestElement;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -31,10 +32,10 @@ public class Main {
         int arr[] = {10, 7, 8, 9, 1, 5};
         int n = arr.length;
 
-        quickSort q = new quickSort();
+       /* quickSort q = new quickSort();
         q.sort(arr, 0, n-1);
-        /*System.out.println("Sorted Array:");
-        q.printArray(arr);*/
+        *//*System.out.println("Sorted Array:");
+        q.printArray(arr);*//*
         int x = 9;
         BinarySearch b = new BinarySearch();
         int result = b.binarySearch(arr, 0, n-1, x);
@@ -43,7 +44,9 @@ public class Main {
         }
         else{
             System.out.println("Element found at index:" + result);
-        }
+        }*/
 
+        kthSmallestElement kse = new kthSmallestElement();
+        System.out.println(kse.kthSmallest(arr,0,n-1,4));
     }
 }

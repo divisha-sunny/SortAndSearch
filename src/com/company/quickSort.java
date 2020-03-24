@@ -22,7 +22,7 @@ public class quickSort {
         return i + 1;
     }
 
-    void sort(int arr[], int low, int high) {
+   public void sort(int arr[], int low, int high) {
         if (low < high) {
             int pi = partition(arr, low, high);
             sort(arr, low, pi - 1);
