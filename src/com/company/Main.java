@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code
-        Sort s = new Sort();
+        // write your code
+        /*Sort s = new Sort();
         MergeSort m =new MergeSort();
         int n, sum = 0;
         Scanner in = new Scanner(System.in);
@@ -25,8 +25,14 @@ public class Main {
         m.sort(a,0,n-1);
         System.out.println("Sorted array");
         m.printArray(a);
+*/
+        int arr[] = {10, 7, 8, 9, 1, 5};
+        int n = arr.length;
 
-
+        quickSort q = new quickSort();
+        q.sort(arr, 0, n-1);
+        System.out.println("Sorted Array:");
+        q.printArray(arr);
 
     }
 }
