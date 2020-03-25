@@ -1,9 +1,11 @@
-package com.company;
+package com.company.sort;
 
 import java.util.ArrayList;
 
 public class Sort {
     void bubbleSort(int arr[]) {
+        //Time-O(n^2)
+        //Space - O(1)
         int n = arr.length;
         int temp;
         for (int i = 0; i < n - 1; i++)
@@ -21,6 +23,8 @@ public class Sort {
         }
     }
     void insertionSort(int arr[]){
+        // Time -O(n^2)
+        // Space - O(1)
         int n = arr.length;
         for(int i=1; i<n; i++)
         {

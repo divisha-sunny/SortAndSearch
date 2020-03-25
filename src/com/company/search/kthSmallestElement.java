@@ -1,6 +1,6 @@
 package com.company.search;
 
-import com.company.quickSort;
+import com.company.sort.quickSort;
 
 public class kthSmallestElement {
 

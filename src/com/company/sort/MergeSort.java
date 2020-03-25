@@ -1,4 +1,4 @@
-package com.company;
+package com.company.sort;
 
 public class MergeSort {
      void sort(int arr[], int low, int high){
