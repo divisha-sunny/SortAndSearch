@@ -3,6 +3,7 @@ package com.company;
 import com.company.search.BinarySearch;
 import com.company.search.kthSmallestElement;
 import com.company.sort.bucketSort;
+import com.company.sort.sortedMerge;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -30,7 +31,7 @@ public class Main {
         System.out.println("Sorted array");
         m.printArray(a);
 */
-        int arr[] = {37, 74, 12, 45, 67, 99, 65, 29, 32, 9, 15, 4};
+      /*  int arr[] = {37, 74, 12, 45, 67, 99, 65, 29, 32, 9, 15, 4};*/
         //int n = arr.length;
 
        /* quickSort q = new quickSort();
@@ -49,9 +50,20 @@ public class Main {
 /*
         kthSmallestElement kse = new kthSmallestElement();
        System.out.println(kse.kthSmallest(arr,0,n-1,4));*/
-
-        bucketSort bs = new bucketSort();
+/*
+    bucketSort bs = new bucketSort();
         bs.sortUsingBucketSort(arr,10);
-        bs.printArray(arr);
+        bs.printArray(arr);*/
+        bucketSort bs = new bucketSort();
+        int NA = -1;
+        sortedMerge sm = new sortedMerge();
+int a[] = {10, 12, 13, 14, 18, NA, NA, NA, NA, NA};
+int n=5;
+int size_a = a.length;
+int b[] = {16, 17, 19, 20, 22};
+int m=5;
+sm.SortedMerge(a, b, n, m);
+bs.printArray(a);
+
     }
 }
