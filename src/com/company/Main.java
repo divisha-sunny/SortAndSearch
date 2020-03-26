@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.search.BinarySearch;
 import com.company.search.kthSmallestElement;
+import com.company.sort.bucketSort;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -29,8 +30,8 @@ public class Main {
         System.out.println("Sorted array");
         m.printArray(a);
 */
-        int arr[] = {10, 7, 8, 9, 1, 5};
-        int n = arr.length;
+        int arr[] = {37, 74, 12, 45, 67, 99, 65, 29, 32, 9, 15, 4};
+        //int n = arr.length;
 
        /* quickSort q = new quickSort();
         q.sort(arr, 0, n-1);
@@ -45,8 +46,12 @@ public class Main {
         else{
             System.out.println("Element found at index:" + result);
         }*/
-
+/*
         kthSmallestElement kse = new kthSmallestElement();
-       System.out.println(kse.kthSmallest(arr,0,n-1,4));
+       System.out.println(kse.kthSmallest(arr,0,n-1,4));*/
+
+        bucketSort bs = new bucketSort();
+        bs.sortUsingBucketSort(arr,10);
+        bs.printArray(arr);
     }
 }
