@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.search.BinarySearch;
+import com.company.search.LinearSearch;
 import com.company.search.kthSmallestElement;
 import com.company.sort.bucketSort;
 import com.company.sort.sortedMerge;
@@ -64,6 +65,8 @@ int b[] = {16, 17, 19, 20, 22};
 int m=5;
 sm.SortedMerge(a, b, n, m);
 bs.printArray(a);
+        LinearSearch l = new LinearSearch();
+        System.out.println(l.search(a, 19));
 
     }
 }
